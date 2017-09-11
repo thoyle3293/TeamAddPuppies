@@ -12,7 +12,7 @@ namespace CSDay01.Data
         Large = 6
     }
 
-    public class Puppy
+    public class Puppy:Object
     {   
         public string Name { get; set; }
         public string Breed { get; set; }
@@ -23,5 +23,10 @@ namespace CSDay01.Data
         public int Age { get; set; }
         public double Height { get; set; }
         public decimal Cost { get; set; }
+
+        public override string ToString()
+        {
+            return $"Name: {this.Name}\n Breed: {this.Breed}\n Weight: {this.Weight}";
+        }
     }
 }
