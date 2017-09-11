@@ -29,7 +29,7 @@ namespace CSDay01
                 Cost = 5.99m,
             };
             // Console.WriteLine($"Name: {puppy.Name}\n Breed: {puppy.Breed}\n Weight: {puppy.Weight}");         
-            // BuildWebHost(args).Run();
+            BuildWebHost(args).Run();
 
             var puppyOwner = new PuppyOwner
             {
