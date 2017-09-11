@@ -6,7 +6,7 @@ namespace CSDay01.Data
 {
     public class PuppyOwner
     {
-        public PuppyOwner() //giving object value or stuff
+        public PuppyOwner() //constructor: giving object value or stuff
         {
             Puppy = new Puppy();
         }

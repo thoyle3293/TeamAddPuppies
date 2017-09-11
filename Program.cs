@@ -47,7 +47,23 @@ namespace CSDay01
                 Age = 1232,
                 Wings = false
             };
-            Console.WriteLine($"This is a {dragon.Age} year old Dragon. She breathes {dragon.Element}! She is a beatiful {dragon.Color} color.");
+            // Console.WriteLine($"This is a {dragon.Age} year old Dragon. She breathes {dragon.Element}! She is a beautiful {dragon.Color} color.");
+             var wizard = new Wizard
+            {
+                Name = "Grumpy",
+                Skills = "Bow staff",
+                Age = 4528,
+                SpiritAnimal = new Dragon
+                {
+                    Color = "Blue",
+                    Element = "water",
+                    Age = 232,
+                    Wings = true
+                }
+            };
+            Console.WriteLine($"{wizard.SpiritAnimal.Color}");    
+            // $"{ = String interpelation
+    
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
