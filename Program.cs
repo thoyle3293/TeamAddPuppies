@@ -28,8 +28,18 @@ namespace CSDay01
                 Height = 2.2,
                 Cost = 5.99m,
             };
-            Console.WriteLine($"Name: {puppy.Name}\n Breed: {puppy.Breed}\n Weight: {puppy.Weight}");         
+            // Console.WriteLine($"Name: {puppy.Name}\n Breed: {puppy.Breed}\n Weight: {puppy.Weight}");         
             // BuildWebHost(args).Run();
+
+            var puppyOwner = new PuppyOwner
+            {
+                Puppy = puppy,
+                OwnerName = "Scooby", 
+                Location = "Mystery Machine", 
+                PhoneNumber = "000-000-0000"
+            };
+
+            Console.WriteLine($"Puppy: {puppyOwner.Puppy} \nLocation: {puppyOwner.Location}");
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
