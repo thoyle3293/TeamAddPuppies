@@ -39,7 +39,15 @@ namespace CSDay01
                 PhoneNumber = "000-000-0000"
             };
 
-            Console.WriteLine($"Puppy: {puppyOwner.Puppy} \nLocation: {puppyOwner.Location}");
+            // Console.WriteLine($"Puppy: {puppyOwner.Puppy} \nLocation: {puppyOwner.Location}");
+            var dragon = new Dragon
+            {
+                Color = "Rainbow",
+                Element = "Fire AND Ice",
+                Age = 1232,
+                Wings = false
+            };
+            Console.WriteLine($"This is a {dragon.Age} year old Dragon. She breathes {dragon.Element}! She is a beatiful {dragon.Color} color.");
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
